@@ -6,7 +6,7 @@ export const GifGrid = ({ category, service }) => {
   return (
     <>
       {isLoading && <div className="loader"></div>}
-      <div className="card-grid">
+      <div className="card-grid mb-8">
         <Masonry
           breakpointCols={{
             default: 3,
