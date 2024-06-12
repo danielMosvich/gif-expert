@@ -56,13 +56,7 @@ input:focus-visible {
   outline: 4px solid var(--focus-color);
 }
 
-h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: var(--text-color-primary);
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-}
+
 h2 {
   font-size: 1.5rem;
 }
@@ -198,6 +192,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .popover.fade {
   animation-name: fade-out;

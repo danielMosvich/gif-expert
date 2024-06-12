@@ -14,7 +14,7 @@ const GifExpertApp = () => {
   };
   return (
     <>
-      <h1 className="md:mt-20 mt-10 font-extrabold drop-shadow-lg text-transparent text-6xl bg-clip-text bg-gradient-to-r from-[#5865F2] to-slate-500">
+      <h1 className="md:my-20 my-10 font-extrabold drop-shadow-lg text-transparent text-6xl bg-clip-text bg-gradient-to-r from-[#5865F2] to-slate-500 text-center uppercase">
         Gif Expert
       </h1>
       <header>
@@ -64,7 +64,14 @@ const GifExpertApp = () => {
       </main>
       <footer className="absolute bottom-0 left-0 right-0 mx-auto">
         <p className="text-center text-xs py-3 text-[var(--text-color-primary)]">
-          Made with ❤️ by <a href="https://x.com/danielmosvich" target="_blank" className="font-semibold">DanielMosvich</a>
+          Made with ❤️ by{" "}
+          <a
+            href="https://x.com/danielmosvich"
+            target="_blank"
+            className="font-semibold"
+          >
+            DanielMosvich
+          </a>
         </p>
       </footer>
       <div className="fixed left-0 top-0 z-[-10] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,158,0.5),#2b2d31)]"></div>
