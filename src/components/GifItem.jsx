@@ -28,7 +28,7 @@ const GifItem = ({ id, title, url, height, original }) => {
         <div
           style={{
             minWidth: "100%",
-            minHeight: height,
+            minHeight: height / 1.5,
             backgroundColor: "#5865f2",
             position: "relative",
           }}
