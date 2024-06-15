@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import useFetchGifs from "../hooks/useFetchGifs";
 import GifItem from "./GifItem";
 import Masonry from "react-masonry-css";
@@ -21,4 +22,9 @@ export const GifGrid = ({ category, service }) => {
       </div>
     </>
   );
+};
+
+GifGrid.propTypes = {
+  category: PropTypes.string.isRequired,
+  service: PropTypes.string.isRequired,
 };

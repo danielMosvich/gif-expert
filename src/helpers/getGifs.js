@@ -11,8 +11,8 @@ export const getGifs = async (category, service) => {
                 id: img.id,
                 title: img.title,
                 url: img.images.fixed_height_small.url,
-                width: img.images.fixed_height_small.width,
-                height: img.images.fixed_height_small.height,
+                width: Number(img.images.fixed_height_small.width),
+                height: Number(img.images.fixed_height_small.height),
                 original: img.images.original.url
             };
         });

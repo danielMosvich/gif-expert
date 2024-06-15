@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component GifItem Debe hacer match con el snapshot 1`] = `
+<div>
+  <div
+    class="card"
+    style="min-width: 100%; background-color: rgb(88, 101, 242); position: relative;"
+  >
+    <img
+      alt="Test"
+      src="https://i.imgur.com/xxx.gif"
+    />
+  </div>
+</div>
+`;

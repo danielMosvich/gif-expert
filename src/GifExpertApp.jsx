@@ -19,6 +19,8 @@ const GifExpertApp = () => {
       </h1>
       <header>
         <button
+          aria-label="giphy-button"
+          name="giphy-button"
           className={`select-button ${service === "giphy" ? "active" : ""}`}
           onClick={() => {
             handleService("giphy");
@@ -27,6 +29,8 @@ const GifExpertApp = () => {
           Giphy
         </button>
         <button
+          aria-label="tenor-button"
+          name="tenor-button"
           className={`select-button ${service === "tenor" ? "active" : ""}`}
           onClick={() => {
             handleService("tenor");

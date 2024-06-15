@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { useEffect, useState } from "react";
 
 export const AddCategory = ({ onNewCategory, setCategories, service }) => {
@@ -21,16 +23,11 @@ export const AddCategory = ({ onNewCategory, setCategories, service }) => {
     setInputValue("");
     setCategories(null);
   };
-  // useEffect(() => {
-  //   if (inputValue === "") {
-  //     setCategories(null);
-  //   }
-  // }, [inputValue]);
   useEffect(() => {
     setInputValue("");
   }, [service]);
   return (
-    <form onSubmit={onSubmit}>
+    <form aria-label='form' onSubmit={onSubmit}>
       {inputValue.length > 0 && (
         <button className="button-return" type="reset" onClick={onReturn}>
           <svg
@@ -87,3 +84,7 @@ export const AddCategory = ({ onNewCategory, setCategories, service }) => {
     </form>
   );
 };
+
+AddCategory.propTypes = {
+  onNewCategory: PropTypes.func.isRequired,
+}
